@@ -7,9 +7,9 @@ inspirados nos anos 2000.
 ## Tecnologias
 
 - React 19 e TypeScript
-- Vinext e Vite
+- React + Vite estático
 - CSS responsivo sem framework de UI
-- Cloudflare Workers/Sites
+- GitHub Pages
 
 ## Desenvolvimento
 
@@ -27,3 +27,7 @@ npm run typecheck
 npm run lint
 npm run build
 ```
+
+O build é gerado em `dist/` sem dependência de servidor. Depois que esta branch
+for incorporada à `main`, o workflow em `.github/workflows/deploy-pages.yml`
+publicará o site automaticamente no GitHub Pages.

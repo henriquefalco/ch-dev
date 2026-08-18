@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 
 type ProfileMode = "interface" | "systems";
@@ -112,7 +110,7 @@ const capabilities = [
   },
 ];
 
-export default function Home() {
+export default function App() {
   const [mode, setMode] = useState<ProfileMode>("interface");
   const profile = profileModes[mode];
 
